@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<header>
+    <meta charset="UTF-8">
+</header>
+<body>
+<p>Programme java permettant de jouer au jeu du <a href="http://www.goodlittlegames.co.uk/games/07-jest.html">Jest</a></p>
+
+<p>La classe principale est la classe Main</p>
+
+<h1>Création d'extensions</h1>
+<p>
+    Si on souhaite ajouter une extension, il faut :<br />
+    1. Créer un package dans modele/extensions/<br />
+    2. Créer la classe de notre nouvelle extension et implémenter l'interface Extension, puis créer nos nouvelles cartes, tel que fait avec l'extension ajoutant les cartes 6<br />
+    Les valeurs pouvant être utilisées comme couleur et valeur de cartes sont définies dans les énumérations "CarteCouleur" et "CarteValeur", situées dans modele/cartes.<br />
+    3. Une fois ceci fait, il faut ajouter l'extension dans la liste des extensions disponibles, dans la classe "Main" :<br />
+    <code style="font-family: monospace">private static final Extension[] EXTENSIONS = {new ExtensionSix()};</code>
+</p>
+
+<h1>Dépendances</h1>
+<p>Si vous souhaitez recompiler ce projet, il est nécessaire d'ajouter les librairies <a href="https://oss.sonatype.org/content/repositories/snapshots/com/miglayout/miglayout-core/5.3-SNAPSHOT/miglayout-core-5.3-20190920.220054-302.jar">miglayout-core</a> et <a href="https://oss.sonatype.org/content/repositories/snapshots/com/miglayout/miglayout-swing/5.3-SNAPSHOT/miglayout-swing-5.3-20190918.220057-300.jar">miglayout-swing</a>!</p>
+
+<h1>Auteurs</h1>
+<p>Réalisé par Corentin Closs & Clément Rousseau au semestre Automne 2019</p>
+</body>
